@@ -155,7 +155,7 @@ Try {
         [string]$installPhase = 'Installation'
 
         ## Install AutoHotkey
-        $ExePath = Get-ChildItem -Path "$dirFiles" -Include ahk*install.exe -File -Recurse -ErrorAction SilentlyContinue
+        $ExePath = Get-ChildItem -Path "$dirFiles" -Include ahk-install.exe -File -Recurse -ErrorAction SilentlyContinue
         If($ExePath.Exists)
         {
         Write-Log -Message "Found $($ExePath.FullName), now attempting to install $installTitle."
